@@ -1,0 +1,303 @@
+@font-face {
+  font-family: "headerfont";
+  src: url(fonts/headfont.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "mm";
+  src: url(fonts/Martian_Mono/static/MartianMono/MartianMono-Regular.ttf)
+    format("truetype");
+}
+
+* {
+  color: rgb(60, 98, 85);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: mm;
+  background-color: rgb(234, 231, 177);
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+}
+#main {
+  width: 100%;
+  height: 115vh;
+}
+
+#heading {
+  width: 100%;
+  height: 15vh;
+  font-weight: bold;
+  font-size: 13px;
+}
+#heading .headLinks {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 35%;
+  width: 100%;
+}
+
+#heading .headLinks a {
+  text-decoration: none;
+  padding: 20px;
+}
+
+#heading .searchBar {
+  margin-left: 80px;
+  display: inline;
+  padding: 15px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  background-color: rgb(60, 98, 85);
+  border-radius: 20px;
+}
+
+#heading .headLinks a.log {
+  padding: 5px;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  color: #61876e;
+}
+
+#heading .headLinks a.logLink {
+  padding-left: 20px;
+}
+
+#heading .searchBar input {
+  height: 30px;
+  border: none;
+  background-color: rgb(60, 98, 85);
+  color: rgb(234, 231, 177);
+  padding-left: 10px;
+}
+
+#heading .searchBar input::placeholder {
+  color: rgb(234, 231, 177);
+  font-family: mm;
+  font-size: 11px;
+}
+
+#heading .searchBar button {
+  width: 30px;
+  height: 30px;
+  padding: 11px;
+  margin-left: -10px;
+  background-image: url(./images/search.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: rgb(60, 98, 85);
+}
+
+.header {
+  background-position: center;
+  background-size: cover;
+}
+.head:hover {
+  color: #2e2e2e;
+}
+
+#logo {
+  height: 7vh;
+  margin-left: 1%;
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.backgroundText {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.backgroundText .bgText {
+  text-align: center;
+  font-size: 130px;
+  font-weight: bolder;
+  letter-spacing: 25px;
+  color: rgb(60, 98, 85);
+  text-shadow: 1px 1px 10px rgb(60, 98, 85);
+}
+
+.backgroundText .bgOverlay {
+  background-color: rgba(234, 231, 177, 0.832);
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+}
+
+#footer {
+  width: 100%;
+  height: 25vh;
+  background-color: rgb(60, 98, 85);
+  position: relative;
+  bottom: -25%;
+  color: white;
+}
+
+.catContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  gap: 60px;
+  z-index: 0;
+}
+.footlogo {
+  height: 7vh;
+  position: relative;
+  left: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.contacts {
+  position: relative;
+  list-style-type: none;
+  bottom: 34%;
+  left: 27%;
+  transform: translate(0, 50%);
+}
+.contacts li {
+  font-size: 12px;
+  padding: 4px;
+}
+.contachVL {
+  width: 2px;
+  height: 15vh;
+  position: absolute;
+  background-color: rgb(97, 135, 110);
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 25%;
+}
+.contacts li img {
+  height: 22px;
+}
+.contacts li p {
+  color: rgb(234, 231, 177);
+  display: inline;
+  position: relative;
+  left: 10px;
+  top: -7px;
+}
+
+.contacts li img.facebook {
+  padding-right: 8px;
+}
+
+.contactus {
+  position: relative;
+  left: 70%;
+  bottom: 70%;
+}
+
+.contactus h3 {
+  color: rgb(234, 231, 177);
+  font-size: 16px;
+  padding: 5px;
+}
+
+.contactus textarea {
+  background-color: rgb(234, 231, 177);
+  border-radius: 10px;
+  padding: 10px;
+  /* color: white; */
+}
+
+.contactus textarea::placeholder {
+  color: rgb(97, 135, 110);
+  font-weight: bold;
+}
+.contactus button {
+  position: absolute;
+  top: 71%;
+  left: 17.3%;
+  background-color: rgb(234, 231, 177);
+  border: 0;
+  width: 80px;
+  height: 30px;
+  font-family: mm;
+  font-weight: bold;
+  font-size: 11px;
+  border-radius: 10px;
+  /* color: aliceblue; */
+}
+.contactus button:hover {
+  color: #2e2e2e;
+  background-color: #61876e;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(97, 135, 110);
+  border-radius: 10px;
+}
+
+div.Imgcenter {
+  box-shadow: 5px 5px 10px #2e2e2e;
+  box-shadow: #2e2e2e;  
+  margin-top: 20px;
+  margin-bottom: 20px ;
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
+  display: block;
+  width: 60%;
+  height: 40%;
+}
+
+img.hand {
+  width: 100%;
+  height: 100%;
+  float: center ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsbody {
+  border-radius: 25px;
+  width: 56%;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 5px 5px 10px #2e2e2e;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.wrapper {
+  width: 100%;
+  float: left;
+  background: rgb(234, 231, 177);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.box {
+  display: flex;
+  align-items: stretch;
+}
+
+h2.prevNews{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5%;
+}
