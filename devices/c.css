@@ -48,11 +48,11 @@ body{
 
 #heading .headLinks a{
     text-decoration: none;
-    padding: 20px;
+    padding: 1.5%;
 }
 
 #heading .searchBar{
-    margin-left: 80px;
+    margin-left: 5%;
     display: inline;
     padding: 15px;
     padding-top: 8px;
